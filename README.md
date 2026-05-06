@@ -3,6 +3,9 @@
 A self-hosted personal blog/diary with a hopecore-cyberpunk aesthetic.
 Runs in Docker, managed via Portainer.
 
+Docker Hub: https://hub.docker.com/r/patchtrail/chronicle
+GitHub: https://github.com/PatchTrail/chronicle
+
 ---
 
 ## Quick Start
@@ -14,14 +17,14 @@ docker run -d \
   --restart unless-stopped \
   -p 3791:3000 \
   -v ~/chronicle-data:/app/data \
-  yourdockerhubusername/chronicle:latest
+  patchtrail/chronicle:latest
 ```
 
 ### Option B — Docker Compose
 ```bash
-git clone https://github.com/yourusername/chronicle.git
+git clone https://github.com/PatchTrail/chronicle.git
 cd chronicle
-docker compose up -d --build
+docker compose up -d
 ```
 
 Then open: **http://localhost:3791**
